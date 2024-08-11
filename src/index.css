@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    transition: all 0.4s;
+}
+
+body.darkmode{
+    background-color: rgb(32,32,44);
+    color: white;
+}
