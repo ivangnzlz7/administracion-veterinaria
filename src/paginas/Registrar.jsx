@@ -55,7 +55,7 @@ const Registrar = () => {
                     Crea Tu Cuenta y Administra {''}
                     <span className=' text-black'>Tus Pacientes</span>
             </h1>
-            <img src="public/veterinario.jpeg" alt="mascota" className=' mx-auto'/>
+            <img src="dist/veterinario.jpeg" alt="mascota" className=' mx-auto'/>
         </div>
 
         <div className='mb-auto md:mt-5 shadow-lg px-6 py-9
