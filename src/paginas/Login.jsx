@@ -122,7 +122,7 @@ const Login = () => {
                     Inicia seccion y Administra tus
                 <span className="text-black"> pacientes</span>
             </h1>
-            <img src="dist/veterinario3.jpeg" alt="Mascotas" className='mt-12'/>
+            <img src="public/veterinario3.jpeg" alt="Mascotas" className='mt-12'/>
         </div>
     
         
