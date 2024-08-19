@@ -43,6 +43,9 @@ const Formulario = () => {
         setAlerta({
             msg: 'Guardado Exitosamente'
         })
+        setTimeout(() => {
+            setAlerta({})
+        }, 5000);
         setNombre('')
         setPropietario('')
         setEmail('')

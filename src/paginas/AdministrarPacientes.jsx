@@ -13,7 +13,7 @@ const AdministrarPacientes = () => {
       <button
         type='button'
         className='bg-purple-800 text-white font-bold
-            uppercase mx-10 p-3 rounded-md mb-10 md: dark:bg-blue-950 dark:hover:bg-blue-900'
+            uppercase mx-10 p-3 rounded-md mb-10 md:hidden dark:bg-blue-950 dark:hover:bg-blue-900'
         onClick={() => setMostrarFormulario(!mostrarFormulario)}
       >{mostrarFormulario ? 'Ocultar Formulario' : 'Mostrar Formulario'}</button>
 
