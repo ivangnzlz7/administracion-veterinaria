@@ -22,12 +22,18 @@ const Login = () => {
                 msg: 'Todos los campos son obligatorios',
                 error: true
             })
+            setTimeout(() => {
+                setAlerta({})
+            }, 5000);
             return
         }
         if(password.length < 6){
             setAlerta({
                 error: true 
             })
+            setTimeout(() => {
+                setAlerta({})
+            }, 5000);
         }
 
         try {
@@ -41,6 +47,9 @@ const Login = () => {
                 msg: error.response.data.msg,
                 error: true
             })
+            setTimeout(() => {
+                setAlerta({})
+            }, 5000);
         }
  
     }

@@ -19,7 +19,10 @@ const ConfirmarCuenta = () => {
             setCuentaConfirmada(true)
             setAlerta({
               msg: data.msg
-            })  
+            })
+            setTimeout(() => {
+                setAlerta({})
+            }, 5000);  
 
             
           } catch (error) {
@@ -27,6 +30,9 @@ const ConfirmarCuenta = () => {
               msg: error.response.data.msg,
               error: true
             })
+            setTimeout(() => {
+                setAlerta({})
+            }, 5000);
           }
 
           setCargando(false)

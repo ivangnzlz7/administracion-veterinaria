@@ -22,6 +22,9 @@ const NuevoPassword = () => {
         setAlerta({
           msg: 'Coloca tu Nuevo Password'
         })
+        setTimeout(() => {
+            setAlerta({})
+        }, 5000);
         setTokenValido(true)
 
       } catch (error) {
@@ -29,6 +32,9 @@ const NuevoPassword = () => {
           msg: 'Hubo un error con el enlace',
           error: true
         })
+        setTimeout(() => {
+            setAlerta({})
+        }, 5000);
       }
     }
     comprobarToken();
@@ -43,6 +49,9 @@ const NuevoPassword = () => {
         msg: 'El password debe contener minimo 6 caracteres',
         error: true
       })
+      setTimeout(() => {
+          setAlerta({})
+      }, 5000);
       return
     }
 
@@ -53,6 +62,9 @@ const NuevoPassword = () => {
       setAlerta({
         msg: data.msg
       })
+      setTimeout(() => {
+          setAlerta({})
+      }, 5000);
       setPasswordModificado(true)
 
     } catch (error) {
@@ -60,6 +72,9 @@ const NuevoPassword = () => {
         msg: error.response.data.msg,
         error: true
       })
+      setTimeout(() => {
+          setAlerta({})
+      }, 5000);
     }
   }
 
