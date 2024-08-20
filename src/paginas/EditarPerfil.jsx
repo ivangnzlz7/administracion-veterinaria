@@ -52,13 +52,14 @@ const EditarPerfil = () => {
                 <span className="font-bold text-purple-800 dark:text-gray-500">Informacion aqui</span>
             </p>
 
+            {msg && <Alerta
+                alerta={alerta}
+            />}
+
             <div className="flex justify-center">
                 <div className="w-full md:w-1/2 bg-white shadow rounded-lg p-5 dark:bg-slate-900
                 transition ease-in-out duration-500">
 
-                    {msg && <Alerta
-                        alerta={alerta}
-                    />}
                     <form
                         onSubmit={handleSubmit}
                     >
